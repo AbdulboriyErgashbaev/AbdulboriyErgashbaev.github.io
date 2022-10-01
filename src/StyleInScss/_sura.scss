@@ -1,0 +1,72 @@
+.sura{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sura-content{
+        display: flex;
+        align-items: center;
+        
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            animation: color 4s infinite;
+        }
+        .dot{
+            width: 12px;
+            height: 12px;
+            
+            margin: 0 10px;
+            border-radius: 50%;
+            animation: dot;
+            animation-duration: 0.9s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .dot1{
+            background-color: chartreuse;
+            animation-name: dot;
+            animation-delay:0.3s ;
+            // animation-iteration-count: infinite;
+
+        }
+        .dot2{
+            background-color: blueviolet;
+            animation-name: dot;
+            animation-duration: 0.6s;
+            // animation-iteration-count: infinite;
+        
+        }
+        .dot3{
+            background-color: deeppink;
+            animation-name: dot;
+           // animation-iteration-count: infinite;
+        
+        }
+    }
+}
+
+@keyframes dot {
+    from{
+        margin-bottom: 0;
+    }
+    to{
+        margin-bottom: 50px;
+    }
+}
+@keyframes color {
+    20%{
+        color: salmon;
+    }
+    40%{
+        color:firebrick;
+    }
+    60%{
+        color: blue;
+    }
+    80%{
+        color: lime;
+    }
+    100%{
+        color: orangered;
+    }
+}

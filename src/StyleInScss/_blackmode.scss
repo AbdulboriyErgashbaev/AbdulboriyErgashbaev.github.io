@@ -1,0 +1,75 @@
+.body-mode{
+    // background:linear-gradient(90deg, black, rgba(0, 0, 0, 0.822));
+    // background:linear-gradient(90deg, black, rgb(27, 22, 22));
+    background: black;
+    
+    .card{
+        .right{
+            p{
+                color: white;
+                    
+            }
+        }
+        h1{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+    }
+    .fx{
+        .bi-list{
+            color: white;
+        }
+    }
+    nav{
+        .mode{
+            background-color: lightskyblue;
+            .circle{
+                // left: 20px;
+                margin-left: 20px;
+                
+            }
+        }
+    }
+    .drop-menu{
+        background-color: gray;
+        .drop{
+            a{
+                color: white;
+                font-weight: 100;
+            }
+        }
+    }
+    .main{
+        .main-heading{
+            h1{
+                color: white;
+            }
+        }
+    }
+    .contact-us{
+        
+        .form{
+        
+            form{
+        
+                label{
+                    color:white;
+                    font-weight: 100;
+                }
+                input{
+                    color: white;
+                }
+            }
+        }
+            }
+            nav{
+                a{
+                    
+                    color:white;
+                    
+                }
+                
+            }
+}

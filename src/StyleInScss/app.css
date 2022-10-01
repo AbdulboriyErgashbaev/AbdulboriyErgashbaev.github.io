@@ -1,0 +1,407 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+nav .mode {
+  background-color: white;
+  width: 35px;
+  height: 15px;
+  border-radius: 20px;
+  position: relative;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.5s;
+}
+nav .mode .circle {
+  position: absolute;
+  background: white;
+  border: solid 1px gray;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all ease 0.5s;
+}
+nav .links .active {
+  color: red;
+}
+nav .links a {
+  margin: 0 20px;
+  color: black;
+  font-weight: 700;
+}
+nav .links button {
+  padding: 5px 10px;
+  border: none;
+  background: greenyellow;
+  border-radius: 5px;
+}
+
+body {
+  transition: all 0.5s ease-in;
+}
+
+@media (max-width: 562px) {
+  nav .links a {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 425px) {
+  nav .links a {
+    margin: 0 3px;
+  }
+}
+.drop-menu {
+  left: -50%;
+  position: fixed;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgba(127, 255, 212, 0.918);
+  border: 1px solid gray;
+  border-left: none;
+  color: black;
+  transition: all ease-in-out 0.5s;
+  max-width: 400px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.drop-menu .drop {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.drop-menu .drop a {
+  color: rgba(0, 0, 0, 0.932);
+  font-weight: 600;
+}
+
+.bi-list {
+  font-size: 30px;
+}
+
+.fx {
+  position: fixed;
+  z-index: 100;
+  top: 13px;
+  left: 10px;
+}
+
+.close-drop {
+  left: 0;
+}
+
+@media (max-width: 562px) {
+  .drop-menu {
+    max-height: 400px;
+    border-radius: 0 10px 10px 0;
+  }
+  .drop-menu .drop a {
+    font-weight: 100;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
+.main .main-heading {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main .main-heading h1 {
+  padding: 0 20px;
+  color: black;
+  text-shadow: 3px 3px 3px #FFA751;
+  font-weight: 100;
+}
+
+.forh1 {
+  display: flex;
+  justify-content: center;
+}
+.forh1 .h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bi-flower1 {
+  font-size: 50px;
+  color: grey;
+  padding: 20px 0;
+}
+
+.ota {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.body-mode {
+  background: black;
+}
+.body-mode .card .right p {
+  color: white;
+}
+.body-mode .card h1 {
+  color: white;
+}
+.body-mode .card h3 {
+  color: white;
+}
+.body-mode .fx .bi-list {
+  color: white;
+}
+.body-mode nav .mode {
+  background-color: lightskyblue;
+}
+.body-mode nav .mode .circle {
+  margin-left: 20px;
+}
+.body-mode .drop-menu {
+  background-color: gray;
+}
+.body-mode .drop-menu .drop a {
+  color: white;
+  font-weight: 100;
+}
+.body-mode .main .main-heading h1 {
+  color: white;
+}
+.body-mode .contact-us .form form label {
+  color: white;
+  font-weight: 100;
+}
+.body-mode .contact-us .form form input {
+  color: white;
+}
+.body-mode nav a {
+  color: white;
+}
+
+.sura {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sura .sura-content {
+  display: flex;
+  align-items: center;
+}
+.sura .sura-content h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-animation: color 4s infinite;
+          animation: color 4s infinite;
+}
+.sura .sura-content .dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  border-radius: 50%;
+  -webkit-animation: dot;
+          animation: dot;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.sura .sura-content .dot1 {
+  background-color: chartreuse;
+  -webkit-animation-name: dot;
+          animation-name: dot;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sura .sura-content .dot2 {
+  background-color: blueviolet;
+  -webkit-animation-name: dot;
+          animation-name: dot;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+.sura .sura-content .dot3 {
+  background-color: deeppink;
+  -webkit-animation-name: dot;
+          animation-name: dot;
+}
+
+@-webkit-keyframes dot {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes dot {
+  from {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 50px;
+  }
+}
+@-webkit-keyframes color {
+  20% {
+    color: salmon;
+  }
+  40% {
+    color: firebrick;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: lime;
+  }
+  100% {
+    color: orangered;
+  }
+}
+@keyframes color {
+  20% {
+    color: salmon;
+  }
+  40% {
+    color: firebrick;
+  }
+  60% {
+    color: blue;
+  }
+  80% {
+    color: lime;
+  }
+  100% {
+    color: orangered;
+  }
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.home h1 {
+  width: 50%;
+  color: white;
+  text-shadow: 1px 1px 1px rebeccapurple;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.home .home-img {
+  width: 50%;
+}
+.home .home-img img {
+  width: 100%;
+}
+
+.home-page .home-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-page .home-footer .contact-me p {
+  color: white;
+}
+
+@media (max-width: 562px) {
+  .home h1 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+  }
+  .home-page .home-footer .contact-me p {
+    font-size: 12px;
+  }
+  .home-page .home-footer .contact-me a {
+    font-size: 12px;
+  }
+}
+.contact-us {
+  height: 100vh;
+}
+.contact-us .form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-us .form form label {
+  color: black;
+  font-weight: 100;
+}
+.contact-us .form form input {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid grey;
+  border-radius: 10px;
+}
+.contact-us .form form textarea {
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+.contact-us .form form button {
+  padding: 10px 20px;
+  width: 100px;
+  background: blue;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.container2 {
+  width: 650px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (max-width: 562px) {
+  .container2 {
+    width: 550px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+.sa {
+  background: linear-gradient(50deg, #5433FF, #20BDFF, #A5FECB);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: 100px;
+  scrollbar-color: red;
+}/*# sourceMappingURL=app.css.map */

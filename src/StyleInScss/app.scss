@@ -1,0 +1,49 @@
+@import "navbar";
+@import "dropmenu";
+@import "main";
+@import "blackmode";
+@import "sura";
+@import "home";
+@import "contact";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.container2{
+    width: 650px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+@media (max-width:562px) {
+    .container2{
+        width: 550px;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    
+}
+// body{
+//     height: 300vh;
+//     background: linear-gradient( 50deg, #5433FF,#20BDFF ,#A5FECB);
+// }
+.sa{
+    // height: 100vh;
+    background: linear-gradient( 50deg, #5433FF,#20BDFF ,#A5FECB);
+}
+html{
+    scroll-behavior: smooth;
+    
+        scrollbar-width: 100px;
+        scrollbar-color: red;
+    
+}

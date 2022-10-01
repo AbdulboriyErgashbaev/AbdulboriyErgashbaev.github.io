@@ -1,0 +1,67 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    .mode{
+        background-color: white;
+        width: 35px;
+        height: 15px;
+        border-radius: 20px;
+        position: relative;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        transition: all ease 0.5s;
+        .circle{
+            position: absolute;
+            background: white;
+            border: solid 1px gray;
+            border-radius: 50%  ;
+            width: 15px;
+            height: 15px;
+            transition: all ease 0.5s;
+        }
+    }
+    .links{
+        .active{
+            color: red;
+        }
+        a{
+            margin: 0 20px;
+            color:black;
+            font-weight: 700;
+        }
+        button{
+            padding: 5px 10px ;
+            border: none;
+            background: greenyellow;
+            border-radius: 5px;
+        }
+    }
+}
+body{
+    transition: all 0.5s ease-in;
+
+}
+
+@media (max-width:562px) {
+    
+    nav{
+        .links{
+            a{
+                margin: 0 10px;
+            }
+        }
+    }
+}
+@media (max-width:425px) {
+nav{
+    .links{
+        a{
+            margin: 0 3px ;
+        }
+    }
+}
+}
+

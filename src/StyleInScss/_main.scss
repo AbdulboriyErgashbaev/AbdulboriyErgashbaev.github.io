@@ -1,0 +1,43 @@
+.main{
+    .main-heading{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1{
+            padding: 0 20px;
+            color:black;
+            text-shadow: 3px 3px 3px #FFA751;
+            font-weight: 100;
+        }
+    }
+}
+.forh1{
+    display: flex;
+    justify-content: center;
+    .h1{
+       // font-size: 100px;
+       font-family: 'Courier New', Courier, monospace;
+       // color: #FFA751;
+
+    }
+}
+
+    .bi-flower1{
+        font-size: 50px;
+        // color: yellow;
+        color: grey;
+        
+        padding: 20px 0;
+        
+        
+    }
+
+.ota{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}

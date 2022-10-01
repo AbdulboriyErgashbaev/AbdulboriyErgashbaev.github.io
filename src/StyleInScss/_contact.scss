@@ -1,0 +1,39 @@
+.contact-us{
+    height: 100vh;
+    .form{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            label{
+                color:black;
+                font-weight: 100;
+            }
+            input{
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                background: none;
+                border-bottom: 1px solid grey;
+                border-radius: 10px;
+            }
+            textarea{
+                outline: none;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            button{
+                padding: 10px 20px ;
+                width: 100px;
+                background: blue;
+                border: none;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}

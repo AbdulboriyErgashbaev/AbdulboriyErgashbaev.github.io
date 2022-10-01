@@ -1,0 +1,68 @@
+.home{
+    width: 100%;
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 5rem;
+h1{
+    width: 50%;
+    color: white;
+    text-shadow: 1px 1px 1px rebeccapurple;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+    .home-img{
+        width: 50%;
+        
+        img{
+            width: 100%;
+            // box-shadow: 10px 10px 10px white;
+            // padding: 20px;
+            
+        }
+}
+}
+.home-page{
+    
+    .home-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .contact-me{
+            p{
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width:562px) {
+    .home{
+        h1{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 100;
+        }
+        .home-img{
+            // width: 100%;
+            img{
+
+            }
+        }
+    }
+    .home-page{
+    
+        .home-footer{
+            
+            .contact-me{
+                p{
+                    font-size: 12px;
+                }
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

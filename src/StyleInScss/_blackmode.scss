@@ -1,7 +1,8 @@
 .body-mode{
     // background:linear-gradient(90deg, black, rgba(0, 0, 0, 0.822));
-    // background:linear-gradient(90deg, black, rgb(27, 22, 22));
-    background: black;
+    background:linear-gradient(90deg,#292E49, #536976 );
+    // background: black;
+    transition: all ease 1s;
     
     .card{
         .right{
@@ -18,6 +19,11 @@
         }
     }
     .fx{
+        .navMenu{
+            span{
+                background-color: white;
+            }
+        }
         .bi-list{
             color: white;
         }

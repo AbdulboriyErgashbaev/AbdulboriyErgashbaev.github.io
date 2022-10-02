@@ -1,18 +1,27 @@
 import React from 'react'
+import "../StyleInScss/navMenu.css"
 function DropMenu() {
 
     function click(){
+      const navMenu =document.querySelector(".navMenu")
     const menu =document.querySelector(".drop-menu")
+    navMenu.classList.toggle("active")
     menu.classList.toggle("close-drop")
  }
  function close(){
     const menu =document.querySelector(".drop-menu")
+    const navMenu =document.querySelector(".navMenu")
     menu.classList.remove("close-drop")
+    navMenu.classList.remove("active")
  }
   return (
 <div className='fx'>
     
-<i onClick={click} class="bi bi-list"></i>
+<div onClick={click} className='navMenu'>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <div className='drop-menu' >
         
         <div className="drop">

@@ -65,3 +65,13 @@ nav{
 }
 }
 
+@media (max-width:375px) {
+    nav{
+        .links{
+            a{
+                font-size: 12px;
+                margin: 0   5px ;
+            }
+        }
+    }
+    }

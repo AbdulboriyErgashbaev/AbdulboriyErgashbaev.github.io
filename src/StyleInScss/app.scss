@@ -32,6 +32,14 @@
     }
     
 }
+@media (max-width:375px) {
+    .container2{
+        width: 300px;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    
+}
 // body{
 //     height: 300vh;
 //     background: linear-gradient( 50deg, #5433FF,#20BDFF ,#A5FECB);

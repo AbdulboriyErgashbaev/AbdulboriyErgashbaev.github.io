@@ -58,6 +58,14 @@ body {
     font-size: 10px;
     margin: 0 5px;
   }
+  nav .mode {
+    height: 10px;
+    width: 30px;
+  }
+  nav .mode .circle {
+    height: 10px;
+    width: 10px;
+  }
 }
 .drop-menu {
   right: -100%;
@@ -297,6 +305,26 @@ body {
     color: orangered;
   }
 }
+@media (max-width: 425px) {
+  .sura h1 {
+    font-size: 20px;
+  }
+  .sura .sura-content .dot {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .sura h1 {
+    font-size: 20px;
+  }
+  .sura .sura-content .dot {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+  }
+}
 .home {
   width: 100%;
   height: 100vh;
@@ -340,6 +368,18 @@ body {
   }
   .home-page .home-footer .contact-me a {
     font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .home h1 {
+    text-align: left;
   }
 }
 .contact-us {
@@ -404,6 +444,13 @@ body {
 @media (max-width: 562px) {
   .container2 {
     width: 550px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+@media (max-width: 375px) {
+  .container2 {
+    width: 300px;
     margin: 0 auto;
     max-width: 1440px;
   }

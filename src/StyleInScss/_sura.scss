@@ -70,3 +70,32 @@
         color: orangered;
     }
 }
+
+@media (max-width:425px) {
+    .sura{
+        h1{
+            font-size: 20px;
+        }
+        .sura-content{
+            .dot{
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+@media (max-width:375px) {
+    .sura{
+        h1{
+            font-size: 20px;
+        }
+        .sura-content{
+            .dot{
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
